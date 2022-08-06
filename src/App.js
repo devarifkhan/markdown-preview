@@ -7,13 +7,13 @@ function App() {
   return (
     <main>
     
-      <section className="markdown">
+      <section className="markdown" id="editor">
         <textarea
           className="input"
           value={markdown}
           onChange={(e) => setMarkdown(e.target.value)}
         ></textarea>
-        <article className="result">
+        <article className="result" id="preview">
           <ReactMarkdown>{markdown}</ReactMarkdown>
         </article>
       </section>
